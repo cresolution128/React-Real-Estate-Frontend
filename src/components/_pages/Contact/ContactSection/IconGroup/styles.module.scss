@@ -1,0 +1,21 @@
+.wrapper {
+  @apply flex flex-row space-x-10 items-center  py-30 px-20 border border-gray-700;
+
+  .iconWrapper {
+    @apply relative w-60 flex items-center justify-center;
+
+    [class^="flaticon-"]::before {
+      @apply m-0 text-40 leading-60 text-primary w-40;
+    }
+  }
+
+  .textWrapper {
+    .title {
+      @apply text-20 font-semibold text-primary mb-[8px];
+    }
+
+    .description {
+      @apply text-16 font-normal text-white;
+    }
+  }
+}

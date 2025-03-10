@@ -1,0 +1,21 @@
+.wrapper {
+  @apply w-full;
+  .tabWrapper {
+    @apply grid grid-cols-3;
+    .Link {
+      @apply text-primary bg-secondary py-2 px-16 transition-all duration-300 flex justify-center;
+      &:hover {
+        @apply text-secondary bg-primary;
+      }
+      &.active {
+        @apply text-secondary bg-primary;
+      }
+    }
+  }
+  .imageWrapper {
+    @apply pt-16;
+    .cardWrapper {
+      @apply mb-15;
+    }
+  }
+}

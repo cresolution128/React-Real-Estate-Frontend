@@ -1,0 +1,16 @@
+.wrapper {
+  @apply grid desktop:grid-cols-3 grid-cols-1 mb-11;
+
+  animation: title 1s cubic-bezier(0.4, 0, 0.6, 1);
+
+  @keyframes title {
+    0% {
+      opacity: 0;
+      transform: translate(0, 100%);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}

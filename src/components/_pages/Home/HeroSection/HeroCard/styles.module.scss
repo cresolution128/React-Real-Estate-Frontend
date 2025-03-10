@@ -1,0 +1,65 @@
+.wrapper {
+  @apply w-full text-white relative overflow-hidden;
+  height: calc(100vh - 170px);
+  .image {
+    @apply brightness-75 w-full;
+    height: calc(100vh - 170px);
+  }
+
+  .textWrapper {
+    @apply text-30 absolute inset-0 whitespace-pre flex flex-col justify-center items-center;
+
+    .title {
+      @apply text-30 mb-15;
+      letter-spacing: 1px;
+
+      animation: title 2s cubic-bezier(0.4, 0, 0.6, 1);
+
+      @keyframes title {
+        0% {
+          opacity: 0;
+          transform: translate(100%, 0);
+        }
+        100% {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    }
+    .description {
+      @apply font-bold mb-35;
+
+      animation: description 2s cubic-bezier(0.4, 0, 0.6, 1);
+
+      @keyframes description {
+        0% {
+          opacity: 0;
+          transform: translate(-100%, 0);
+        }
+        100% {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    }
+    .button {
+      @apply border-2 border-white bg-transparent text-white px-35 py-15 text-18 font-medium uppercase transition-all duration-300;
+      letter-spacing: 1px;
+      animation: button 1s cubic-bezier(0.4, 0, 0.6, 1);
+
+      @keyframes button {
+        0% {
+          opacity: 0;
+          transform: translate(0, 100%);
+        }
+        100% {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      &:hover {
+        @apply border-primary bg-primary text-black;
+      }
+    }
+  }
+}

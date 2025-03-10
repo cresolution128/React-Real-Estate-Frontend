@@ -1,0 +1,23 @@
+.wrapper {
+  .text {
+    @apply text-30 text-secondary font-bold mb-25;
+  }
+  .formWrapper {
+    @apply bg-gray-100 p-30;
+    .formGroup {
+      @apply mb-16;
+      .label {
+        @apply text-16 text-gray-500 mb-2;
+      }
+      .input {
+        @apply bg-white border border-gray-200 text-black;
+      }
+      .textarea {
+        @apply bg-white border border-gray-200 text-black h-150;
+      }
+      .button {
+        @apply py-15 px-30 text-16 font-normal;
+      }
+    }
+  }
+}

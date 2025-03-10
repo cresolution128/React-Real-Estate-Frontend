@@ -1,0 +1,33 @@
+.wrapper {
+  @apply relative my-45 h-full min-h-500 flex items-center justify-center;
+
+  background: linear-gradient(rgba(3, 15, 39, 0.9), rgba(3, 15, 39, 0.9)), url(../../../../assets/img/carousel-1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .button {
+    @apply w-100 h-100 rounded-full bg-primary relative flex items-center justify-center;
+
+    .play {
+      @apply z-10 block relative w-0 h-0 border-l-32 border-l-secondary border-t-22 border-t-transparent border-b-22 border-b-transparent;
+      border-top: 22px solid transparent;
+      border-bottom: 22px solid transparent;
+    }
+    &::before {
+      content: "";
+      @apply absolute inset-0 inline-flex h-full w-full rounded-full bg-primary opacity-75 z-0;
+      animation: pulse-border 1500ms ease-out infinite;
+      @keyframes pulse-border {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1.5);
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

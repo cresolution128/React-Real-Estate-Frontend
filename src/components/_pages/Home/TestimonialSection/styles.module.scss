@@ -1,0 +1,37 @@
+.wrapper {
+  @apply relative my-45 py-90 h-full min-h-500 flex items-center justify-center;
+
+  background: linear-gradient(rgba(3, 15, 39, 0.9), rgba(3, 15, 39, 0.9)), url(../../../../assets/img/carousel-1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .topicWrapper {
+    @apply grid grid-cols-12;
+
+    .firstWrapper {
+      @apply col-span-2;
+    }
+    .secondWrapper {
+      @apply col-span-8;
+      .imageWrapper {
+        @apply mx-[20px] flex justify-center;
+        .imageBox {
+          @apply flex max-w-[300px] mt-30;
+        }
+        .image {
+          @apply rounded-full;
+        }
+      }
+      .subWrapper {
+        @apply w-full;
+        .symbol {
+          @apply flex justify-center items-center py-16;
+        }
+      }
+    }
+    .thirdWrapper {
+      @apply col-span-2;
+    }
+  }
+}

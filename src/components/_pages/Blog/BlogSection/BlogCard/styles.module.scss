@@ -1,0 +1,77 @@
+.wrapper {
+  @apply px-15 mb-30;
+  &.first {
+    animation: service 1s cubic-bezier(0.4, 0, 0.6, 1);
+
+    @keyframes service {
+      0% {
+        opacity: 0;
+        transform: translate(0, 300%);
+      }
+      100% {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+  &.second {
+    animation: service 1.5s cubic-bezier(0.4, 0, 0.6, 1);
+
+    @keyframes service {
+      0% {
+        opacity: 0;
+        transform: translate(0, 300%);
+      }
+      100% {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+
+  &:hover {
+    .blogImage .description {
+      @apply opacity-100;
+    }
+    .blogText .button {
+      @apply text-white;
+    }
+  }
+  .serviceImage {
+    @apply w-full relative;
+    .image {
+      @apply w-full object-cover;
+    }
+  }
+  .blogText {
+    @apply flex w-full justify-center items-center bg-secondary;
+    .title {
+      @apply text-20 pl-25 pr-15 font-bold text-primary w-full truncate;
+    }
+    .button {
+      @apply text-60 font-thin leading-60 text-secondary bg-primary w-60 h-60 flex justify-center items-center flex-none pb-10 transition-all duration-500;
+    }
+  }
+  .blogMeta {
+    @apply flex justify-center items-center pt-25 pb-15 relative;
+    &::after {
+      content: "";
+      @apply h-[1px] w-100 bg-primary absolute bottom-0;
+    }
+    .blogPara {
+      @apply px-[3px] text-16 font-light text-gray-600 italic;
+    }
+    .blogLink {
+      @apply text-16 pl-5 font-light text-gray-600;
+    }
+    .blogLink2 {
+      @apply text-16 pl-5 font-light text-gray-600;
+      &:hover {
+        @apply text-primary;
+      }
+    }
+  }
+  .blogDescription {
+    @apply text-16 text-center px-25 pt-15 pb-25;
+  }
+}

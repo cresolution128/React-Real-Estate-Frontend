@@ -1,0 +1,23 @@
+.wrapper {
+  @apply mb-15;
+
+  .buttonHeader {
+    .button {
+      @apply px-25 py-10 text-16 leading-[40px] border text-left w-full flex justify-between items-center;
+
+      &.opened {
+        @apply bg-primary transition-all duration-500;
+
+        .add {
+          @apply text-black;
+        }
+      }
+      .add {
+        @apply text-20 text-primary font-normal  flex justify-center items-center;
+      }
+    }
+  }
+  .cardBody {
+    @apply px-25 py-20 text-16 border;
+  }
+}

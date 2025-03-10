@@ -1,0 +1,24 @@
+.postCard {
+  @apply flex;
+  .postImage {
+    @apply max-w-80;
+  }
+  .postText {
+    @apply pl-15 pr-30 flex flex-col justify-between;
+    .postTitle {
+      @apply text-16 font-normal text-gray-700;
+    }
+    .linkText {
+      @apply text-14 font-normal text-gray-700 flex;
+      .linkLogo {
+        @apply pr-5 italic;
+      }
+      .linkLabel {
+        @apply pr-5 transition-all duration-300;
+        &:hover {
+          @apply text-primary;
+        }
+      }
+    }
+  }
+}

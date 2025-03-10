@@ -1,0 +1,19 @@
+.postWrapper {
+  @apply mb-45;
+  .postHeading {
+    @apply text-secondary mb-20 flex justify-between items-center;
+    .postText {
+      @apply text-30 font-bold;
+    }
+    .postButton {
+      @apply bg-primary text-secondary w-30 h-30 text-16 font-bold ml-15 transition-all duration-300;
+
+      &:hover {
+        @apply bg-secondary text-primary;
+      }
+    }
+  }
+  .cardWrapper {
+    @apply flex;
+  }
+}

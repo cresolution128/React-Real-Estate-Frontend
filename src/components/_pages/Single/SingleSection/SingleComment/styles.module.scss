@@ -1,0 +1,12 @@
+.wrapper {
+  @apply mb-45;
+  .text {
+    @apply text-30 text-secondary font-bold mb-25;
+  }
+  .cardPadding {
+    @apply mb-30;
+  }
+  .cardThird {
+    @apply pl-40;
+  }
+}

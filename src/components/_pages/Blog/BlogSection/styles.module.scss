@@ -1,0 +1,15 @@
+.wrapper {
+  @apply pt-45 pb-15;
+  .textWrapper {
+    @apply text-center mb-45;
+    .logoText {
+      @apply text-primary text-18 mb-5 font-semibold;
+    }
+    .heading {
+      @apply text-secondary text-50 font-bold;
+    }
+  }
+  .blogWrapper {
+    @apply grid desktop:grid-cols-3 tablet:grid-cols-2 grid-cols-1;
+  }
+}

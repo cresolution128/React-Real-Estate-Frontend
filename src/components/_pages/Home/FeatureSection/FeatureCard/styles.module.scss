@@ -1,0 +1,49 @@
+.wrapper {
+  @apply p-30 flex space-x-30 items-center min-h-250;
+
+  &.primary {
+    @apply bg-secondary text-primary;
+  }
+  &.secondary {
+    @apply bg-primary text-secondary;
+
+    .iconWrapper::after {
+      @apply bg-primary;
+    }
+  }
+
+  .iconWrapper {
+    @apply relative w-60 flex items-center justify-center;
+
+    &::before {
+      content: "";
+      z-index: 1;
+      @apply absolute w-80 h-80 -top-20 -left-10 border-2 border-dotted border-white rounded-full;
+    }
+
+    &::after {
+      content: "";
+      z-index: 2;
+      width: 79px;
+      height: 79px;
+      top: -18px;
+      left: -9px;
+      @apply absolute rounded-full bg-secondary;
+    }
+
+    [class^="flaticon-"]::before {
+      @apply relative m-0 text-60 leading-60;
+      z-index: 3;
+    }
+  }
+
+  .textWrapper {
+    .title {
+      @apply text-25 font-semibold;
+    }
+
+    .description {
+      @apply text-18 font-normal;
+    }
+  }
+}

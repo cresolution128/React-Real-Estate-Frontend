@@ -1,0 +1,15 @@
+.memoWrapper {
+  @apply mb-45 p-30 bg-[#f3f6ff] flex;
+  .imageWrapper {
+    @apply flex flex-none  w-100 h-full;
+  }
+  .panel {
+    @apply pl-30 flex flex-col justify-between;
+    .memoHeading {
+      @apply text-20 pb-2 font-bold;
+    }
+    .memoText {
+      @apply text-16;
+    }
+  }
+}

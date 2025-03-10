@@ -1,0 +1,15 @@
+.textWrapper {
+  @apply text-center;
+  .heading {
+    @apply text-[22px] text-primary font-bold;
+  }
+  .title {
+    @apply text-14 text-white font-light italic mb-10;
+  }
+  .textSet {
+    @apply flex flex-wrap;
+    .description {
+      @apply text-16 text-white font-light;
+    }
+  }
+}

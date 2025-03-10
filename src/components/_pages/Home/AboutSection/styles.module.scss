@@ -1,0 +1,35 @@
+.wrapper {
+  @apply grid desktop:grid-cols-12 grid-cols-1 w-full pt-45 pb-45;
+
+  animation: title 1s cubic-bezier(0.4, 0, 0.6, 1);
+
+  @keyframes title {
+    0% {
+      opacity: 0;
+      transform: translate(0, 100%);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .imageWrapper {
+    @apply col-span-5 w-full p-15 items-center;
+  }
+  .textWrapper {
+    @apply col-span-7 mb-30  pr-15 pl-15 flex flex-col justify-center;
+
+    .logoText {
+      @apply text-18 text-primary mb-5 font-semibold pb-5;
+    }
+    .title {
+      @apply text-secondary font-bold text-50 mb-30;
+      line-height: 1.2;
+    }
+  }
+  .Description {
+    @apply text-16 font-normal mb-8;
+    color: #666666;
+  }
+}

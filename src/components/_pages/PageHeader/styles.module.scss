@@ -1,0 +1,31 @@
+.wrapper {
+  @apply py-90 mb-45 bg-primary text-center;
+  .textWrapper {
+    @apply relative;
+    .title {
+      @apply pb-5 mb-20 text-secondary text-60 font-bold flex justify-center items-center;
+      &::after {
+        content: "";
+        @apply h-[2px] w-100 bg-secondary  bottom-0 absolute;
+      }
+    }
+  }
+  .linkWrapper {
+    @apply flex items-center justify-center;
+    .link1 {
+      @apply text-secondary text-[22px] px-[12px]  transition-all duration-300;
+      &:hover {
+        @apply text-white;
+      }
+    }
+    .symbol {
+      @apply text-[22px] text-secondary;
+    }
+    .link2 {
+      @apply text-secondary text-[22px] px-[12px] transition-all duration-300;
+      &:hover {
+        @apply text-white;
+      }
+    }
+  }
+}

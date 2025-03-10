@@ -1,0 +1,18 @@
+.imageText {
+  @apply pb-30;
+  .imageSingle {
+    @apply pb-20;
+  }
+  .title1 {
+    @apply text-32 text-secondary font-medium pb-2;
+  }
+  .title2 {
+    @apply text-28 text-secondary font-medium pb-2;
+  }
+  .title3 {
+    @apply text-24 text-secondary font-medium pb-2;
+  }
+  .description {
+    @apply text-16 pb-16 text-gray-700;
+  }
+}

@@ -1,0 +1,37 @@
+.wrapper {
+  @apply grid desktop:grid-cols-2 grid-cols-1 pt-45 pb-45;
+
+  .leftPanel {
+    @apply grid grid-cols-2 w-full;
+
+    animation: leftPanel 1s cubic-bezier(0.4, 0, 0.6, 1);
+
+    @keyframes leftPanel {
+      0% {
+        opacity: 0;
+        transform: translate(-100%, 0);
+      }
+      100% {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+
+  .rightPanel {
+    @apply grid grid-cols-2 w-full;
+
+    animation: rightPanel 1s cubic-bezier(0.4, 0, 0.6, 1);
+
+    @keyframes rightPanel {
+      0% {
+        opacity: 0;
+        transform: translate(100%, 0);
+      }
+      100% {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+}

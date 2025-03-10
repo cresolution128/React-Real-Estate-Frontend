@@ -1,0 +1,32 @@
+.wrapper {
+  @apply py-45 text-center;
+  .heading {
+    @apply mb-45;
+    .logoText {
+      @apply text-18 font-semibold mb-5 text-primary;
+    }
+    .headingText {
+      @apply text-50 font-bold  text-secondary;
+    }
+  }
+  .buttonSet {
+    @apply -mt-15 mb-45;
+    .button {
+      @apply px-15 py-[8px] m-5 bg-primary text-secondary text-14 font-medium transition-all duration-300;
+      &:hover {
+        @apply bg-secondary text-primary;
+      }
+    }
+  }
+  .project {
+    @apply grid desktop:grid-cols-3 tablet:grid-cols-2 grid-cols-1 mx-15;
+  }
+  .footerWrapper {
+    .buttonFooter {
+      @apply px-35 py-15 m-5 bg-primary text-secondary text-16 font-medium transition-all duration-300;
+      &:hover {
+        @apply bg-secondary text-primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.wrapper {
+  @apply flex;
+  .imageWrapper {
+    @apply flex-none w-60 h-full;
+  }
+  .panelWrapper {
+    @apply pl-15 text-gray-700;
+    .textLink {
+      @apply text-18 font-semibold transition-all duration-300 mb-[3px];
+      &:hover {
+        @apply text-primary;
+      }
+    }
+    .textTime {
+      @apply text-14 font-light mb-5;
+    }
+    .description {
+      @apply text-16 mb-16;
+    }
+    .button {
+      @apply px-10 py-[3px] border text-secondary bg-gray-200 border-gray-200 transition-all duration-300;
+      &:hover {
+        @apply bg-primary border-primary;
+      }
+    }
+  }
+}

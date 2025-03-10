@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  @apply text-60 !important;
+}
+
+.hero-carousel .slick-dots {
+  @apply bottom-20;
+}
+.hero-carousel .slick-dots li button:before {
+  content: '';
+  height: 3px;
+  @apply absolute bg-white opacity-25 w-25;
+}
+.hero-carousel .slick-prev {
+  @apply z-10 left-30;
+}
+.hero-carousel .slick-next {
+  @apply z-10 right-30;
+}
+
+.post-carousel {
+  @apply w-full;
+}
+.post-carousel .slick-prev {
+  @apply z-10 left-10;
+}
+.post-carousel .slick-next {
+  @apply z-10 right-30;
+}
+.post-carousel .slick-prev:before {
+  @apply bg-secondary text-primary; 
+  content: '←';
+}
+.image-slick {
+  @apply w-full;
+}
+
+.text-slick {
+  @apply w-full;
+}
+.text-slick .slick-prev {
+  @apply left-0 z-10 opacity-0 h-160 w-80;
+}
+.text-slick .slick-next {  
+  @apply right-0 z-10 opacity-0 h-160 w-80;
+}
+.image-slick .slick-list .slick-track .slick-slide {
+  @apply  transition-all duration-700 scale-50 opacity-100;
+}
+.image-slick .slick-list .slick-track .slick-active{
+  @apply  scale-100 opacity-100;
+}
+.image-slick .slick-list .slick-track .slick-center{
+  @apply  z-30 block scale-150 opacity-100;
+}
+.image-slick .slick-list .slick-track {
+  @apply pt-30;
+}
+.image-slick .slick-list {
+  @apply h-170;
+}
+
+@import "./assets/flaticon/font/flaticon.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

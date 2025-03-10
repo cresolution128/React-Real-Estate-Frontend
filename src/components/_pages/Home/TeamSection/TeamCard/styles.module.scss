@@ -1,0 +1,113 @@
+.wrapper {
+  @apply px-15 mb-30 relative;
+
+  &.first {
+    animation: service 0.5s cubic-bezier(0.4, 0, 0.6, 1);
+
+    @keyframes service {
+      0% {
+        opacity: 0;
+        transform: translate(0, 300%);
+      }
+      100% {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+  &.second {
+    animation: service 0.75s cubic-bezier(0.4, 0, 0.6, 1);
+
+    @keyframes service {
+      0% {
+        opacity: 0;
+        transform: translate(0, 300%);
+      }
+      100% {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+  &.third {
+    animation: service 1s cubic-bezier(0.4, 0, 0.6, 1);
+
+    @keyframes service {
+      0% {
+        opacity: 0;
+        transform: translate(0, 300%);
+      }
+      100% {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+  &.forth {
+    animation: service 1.3s cubic-bezier(0.4, 0, 0.6, 1);
+
+    @keyframes service {
+      0% {
+        opacity: 0;
+        transform: translate(0, 300%);
+      }
+      100% {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+
+  &:hover {
+    .teamText {
+      @apply bg-primary;
+    }
+    .teamText .teamName {
+      @apply text-secondary;
+      letter-spacing: 1px;
+    }
+    .teamImage .socialIcon {
+      @apply translate-x-0 #{!important};
+    }
+  }
+
+  .teamImage {
+    @apply overflow-hidden relative w-full object-cover;
+    .image {
+      @apply w-full object-cover;
+    }
+
+    .layout {
+      @apply absolute left-0 top-0;
+
+      .socialIcon {
+        @apply w-50 h-50 text-white flex justify-center items-center transition-all duration-500 transform -translate-x-full;
+
+        &.twitter {
+          @apply bg-twitter delay-100;
+        }
+
+        &.facebook {
+          @apply bg-facebook delay-200;
+        }
+
+        &.linkedin {
+          @apply bg-linkedinIn delay-300;
+        }
+
+        &.instagram {
+          @apply bg-instagram delay-[400ms];
+        }
+      }
+    }
+  }
+  .teamText {
+    @apply bg-secondary py-25 px-15 transition-all duration-500;
+    .teamName {
+      @apply text-20 font-semibold mb-2 text-primary transition-all duration-500;
+    }
+    .teamPosition {
+      @apply text-16 font-normal text-white;
+    }
+  }
+}

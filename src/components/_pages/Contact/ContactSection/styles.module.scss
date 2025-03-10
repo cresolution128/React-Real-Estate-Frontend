@@ -1,0 +1,29 @@
+.wrapper {
+  @apply pt-45 pb-15;
+  .textWrapper {
+    @apply text-center mb-45;
+    .logoText {
+      @apply text-primary text-18 mb-5 font-semibold;
+    }
+    .heading {
+      @apply text-secondary text-50 font-bold;
+    }
+  }
+  .contactWrapper {
+    @apply grid desktop:grid-cols-2 grid-cols-1;
+    .leftPanel {
+      @apply p-30 bg-secondary space-y-30;
+    }
+    .rightPanel {
+      @apply p-30 bg-primary;
+      .form {
+        @apply space-y-3;
+        .textarea {
+          @apply bg-transparent border border-white w-full h-170 outline-none placeholder-white px-10 py-10 text-18 text-white;
+        }
+        .button {
+        }
+      }
+    }
+  }
+}

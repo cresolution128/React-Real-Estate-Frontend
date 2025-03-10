@@ -1,0 +1,10 @@
+.wrapper {
+  @apply grid desktop:grid-cols-12 grid-cols-1 w-full py-45;
+
+  .leftWrapper {
+    @apply col-span-8 px-15;
+  }
+  .rightWrapper {
+    @apply col-span-4;
+  }
+}

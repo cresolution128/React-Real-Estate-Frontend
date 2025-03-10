@@ -1,0 +1,15 @@
+.wrapper {
+  @apply py-45;
+  .textWrapper {
+    @apply pb-45 text-center;
+    .logoText {
+      @apply text-16 text-primary font-semibold mb-5;
+    }
+    .heading {
+      @apply text-50 text-secondary font-bold;
+    }
+  }
+  .accordion {
+    @apply grid desktop:grid-cols-2 grid-cols-1;
+  }
+}

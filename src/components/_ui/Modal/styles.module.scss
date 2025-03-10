@@ -1,0 +1,66 @@
+.dialog {
+  @apply relative z-10;
+
+  .overlay {
+    @apply fixed inset-0 bg-black bg-opacity-25;
+  }
+
+  .transitionEnter {
+    @apply ease-out desktop:duration-300 duration-500;
+  }
+
+  .transitionEnterFrom {
+    @apply transform translate-y-[100vh];
+
+    @screen desktop {
+      @apply opacity-0 scale-95 translate-y-0;
+    }
+  }
+
+  .transitionEnterTo {
+    @apply transform translate-y-0;
+
+    @screen desktop {
+      @apply opacity-100 scale-100;
+    }
+  }
+
+  .transitionLeave {
+    @apply ease-in desktop:duration-200 duration-500;
+  }
+
+  .transitionLeaveFrom {
+    @apply transform translate-y-0;
+
+    @screen desktop {
+      @apply opacity-0 scale-95;
+    }
+  }
+
+  .transitionLeaveTo {
+    @apply transform translate-y-[100vh];
+
+    @screen desktop {
+      @apply opacity-100 scale-100 translate-y-0;
+    }
+  }
+
+  .wrapper {
+    @apply fixed inset-0 flex items-end;
+
+    @screen desktop {
+      @apply items-center justify-center;
+    }
+    .panel {
+      @apply w-full text-left align-middle bg-white shadow-xl flex flex-col items-center justify-center space-y-30 h-5/6 overflow-hidden rounded-t-2xl px-20 py-10 overflow-auto;
+
+      @screen desktop {
+        @apply max-w-680 rounded-2xl max-h-400;
+      }
+    }
+
+    .content {
+      @apply h-full w-full relative;
+    }
+  }
+}

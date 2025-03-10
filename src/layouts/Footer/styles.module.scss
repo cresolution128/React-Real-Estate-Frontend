@@ -1,0 +1,93 @@
+.wrapper {
+  @apply bg-secondary pt-100 pb-30 mt-45;
+  animation: footer 1s cubic-bezier(0.4, 0, 0.6, 1);
+
+  @keyframes footer {
+    0% {
+      opacity: 0;
+      transform: translate(0, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .containerWrapper {
+    @apply text-white;
+
+    .colWrapper {
+      @apply grid desktop:grid-cols-4 tablet:grid-cols-2 grid-cols-1 mb-45;
+
+      .footerCol {
+        @apply flex flex-col;
+
+        .title {
+          @apply text-primary text-20 font-semibold relative pb-10 mb-20;
+
+          &::after {
+            content: "";
+            @apply absolute w-60 h-0.5 left-0 bottom-0 bg-primary;
+          }
+        }
+        .contactItem {
+          @apply flex items-center space-x-10 mb-20;
+        }
+
+        .socialWrapper {
+          @apply flex space-x-10;
+
+          .socialIcon {
+            @apply rounded-full border border-white w-40 h-40 flex justify-center items-center;
+
+            &:hover {
+              @apply bg-primary text-secondary border-primary;
+            }
+          }
+        }
+
+        .link {
+          @apply flex space-x-10 items-center transition-all duration-300 mb-10;
+
+          &:hover {
+            @apply text-primary;
+            letter-spacing: 1px;
+          }
+        }
+
+        .form {
+          @apply relative mt-30;
+
+          .button {
+            @apply absolute right-5 top-1/2 transform -translate-y-1/2;
+          }
+        }
+      }
+    }
+    .footerBox {
+      @apply border-t border-b border-zinc-400 py-15 flex justify-center;
+
+      .footerLink {
+        @apply pr-15 mr-15 border-r text-16 transition-all duration-500;
+        &:hover {
+          @apply text-primary;
+        }
+      }
+      .footer {
+        @apply transition-all duration-500;
+        &:hover {
+          @apply text-primary;
+        }
+      }
+    }
+    .footerEnd {
+      @apply py-30 px-15 flex justify-between;
+    }
+    .siteName {
+      @apply transition-all duration-500 font-semibold  text-primary;
+      &:hover {
+        @apply text-white;
+      }
+    }
+  }
+}

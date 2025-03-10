@@ -1,0 +1,11 @@
+.wrapper {
+  @apply desktop:pl-0 w-full relative;
+
+  .container {
+    @apply h-full desktop:pr-0 desktop:pb-50 pb-100;
+
+    .backTo {
+      @apply bg-primary z-50 text-50 w-70 h-70;
+    }
+  }
+}

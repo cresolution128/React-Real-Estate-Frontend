@@ -1,0 +1,62 @@
+.wrapper {
+  @apply w-full bg-primary hidden desktop:block h-90;
+
+  .logoWrapper {
+    @apply flex justify-between;
+
+    .logoText {
+      @apply font-bold text-secondary;
+    }
+    .iconWrapper {
+      @apply grid grid-cols-3 gap-x-30;
+    }
+  }
+}
+
+.navWrapper {
+  @apply bg-secondary sticky top-0 hidden tablet:block z-50;
+  line-height: 1.5;
+  .navbar {
+    @apply flex justify-between items-center;
+    .navMenu {
+      @apply flex text-white space-x-30 py-30;
+
+      .navItemWrapper {
+        @apply relative;
+        &:hover {
+          .subMenuWrapper {
+            @apply flex;
+          }
+        }
+
+        .navItem {
+          @apply uppercase;
+          &.active,
+          &:hover {
+            @apply text-primary;
+          }
+
+          .downIcon {
+            display: inline-block;
+            margin-left: 10px;
+            vertical-align: 0.255em;
+            border-top: 0.3em solid;
+            border-right: 0.3em solid transparent;
+            border-bottom: 0;
+            border-left: 0.3em solid transparent;
+          }
+        }
+
+        .subMenuWrapper {
+          @apply absolute bg-white py-[8px]  text-black hidden flex-col whitespace-nowrap;
+          .button {
+            @apply px-[24px] py-[4px];
+          }
+        }
+      }
+    }
+    .button {
+      @apply text-16 px-[12px] py-[6px];
+    }
+  }
+}

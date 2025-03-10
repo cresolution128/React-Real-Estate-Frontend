@@ -1,0 +1,52 @@
+.buttonStyle {
+    @apply flex justify-center items-center py-2 border-2 px-10 filter drop-shadow-xl text-14 font-semibold focus:outline-none transition-all duration-300;
+
+    &.big {
+        @apply px-35 py-15 text-18;
+    }
+
+    &:focus-visible,
+    &:visited,
+    &:active,
+    &:target {
+        @apply outline-none border;
+    }
+
+    &.primary {
+        @apply text-secondary bg-primary;
+
+        &:hover {
+            @apply text-white bg-secondary;
+        }
+    }
+
+    &.transparent {
+        @apply bg-transparent text-white border-2 border-white;
+
+        &:hover {
+            @apply bg-primary text-secondary border-primary;
+        }
+    }
+
+    &.dark {
+        @apply bg-secondary border-2 border-primary text-primary;
+
+        &:hover {
+            @apply bg-primary text-secondary;
+        }
+    }
+    &.contact {
+        @apply bg-secondary  border-primary border-2 text-primary text-16 px-30 py-[16px];
+
+        &:hover {
+            @apply bg-white text-secondary;
+        }
+    }
+    &.white {
+        @apply border-gray-300 border text-gray-500 text-16 px-15 py-[7px] m-5 font-normal;
+
+        &:hover {
+            @apply bg-secondary text-primary;
+        }
+    }
+}

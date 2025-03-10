@@ -1,0 +1,19 @@
+.wrapper {
+  @apply flex flex-row space-x-20 items-center;
+
+  .iconWrapper {
+    [class^="flaticon-"]::before {
+      @apply text-40;
+    }
+  }
+
+  .textWrapper {
+    .title {
+      @apply text-16;
+    }
+
+    .description {
+      @apply text-13;
+    }
+  }
+}

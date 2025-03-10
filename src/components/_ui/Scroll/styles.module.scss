@@ -1,0 +1,12 @@
+.scroll {
+  @apply w-45 h-45 bg-primary flex justify-center items-center transition-all duration-500;
+  &:hover {
+    @apply bg-secondary;
+    .icon {
+      @apply text-primary;
+    }
+  }
+  .icon {
+    @apply text-25;
+  }
+}
